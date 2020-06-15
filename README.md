@@ -34,6 +34,8 @@ To run use cases from project dir as an example: python -m examples.alerts<br/>
 
 ## Use Cases
 The following examples are some use cases seen in the field.<br/>
-To run use cases from project dir: python -m usecases.eventscsv
+To run use cases from project dir: python -m usecases.eventscsv.eventscsv
 
-1. Retrieve events to csv files: [usecases/eventscsv.py](usecases/eventscsv.py)
+1. Retrieve events to csv files: [usecases/eventscsv/eventscsv.py](usecases/eventscsv/eventscsv.py)
+2. Retrieve all firewall events to csv files by using delta chunks: [usecases/fwevents/getfwevents.py](usecases/fwevents/getfwevents.py)
+    The chunks must be used in order to avoid reaching the 50k per request limitation when there are too many events.
